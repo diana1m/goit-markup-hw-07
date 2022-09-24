@@ -1,5 +1,5 @@
 .features {
-    padding-top: 94px;
+    @include section(94px, 94px);
 }
 
 .features__list,
@@ -12,7 +12,7 @@
 }
 
 .features__item {
-    flex-basis: calc((100% - 30px *3) / 4);
+    @include item();
 }
 
 .features__box {
@@ -24,7 +24,7 @@
     margin-bottom: 30px;
 }
 
-.features__suptitle {
+.features__subtitle {
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;

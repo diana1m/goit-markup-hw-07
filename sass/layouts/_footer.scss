@@ -1,7 +1,6 @@
 .footer {
     background-color: var(--bg-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    @include section(60px, 60px);
 }
 
 .footer__container {
@@ -10,7 +9,7 @@
     align-items: baseline;
 }
 
-.footer__adress-box{
+.footer__address-box{
     margin-right: 70px;
 }
 

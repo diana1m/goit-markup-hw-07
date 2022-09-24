@@ -2,12 +2,11 @@
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+    @include section(200px, 200px);
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-bg.jpg);
     background-color: var(--bg-color);
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
 }
 
 .hero__title {

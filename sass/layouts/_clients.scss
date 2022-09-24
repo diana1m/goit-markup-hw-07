@@ -1,4 +1,6 @@
-/* .clients {} */
+.clients {
+    @include section (94px, 94px);
+} 
 
 /* .clients-list {} */
 

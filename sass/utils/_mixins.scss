@@ -4,10 +4,11 @@
     transition-timing-function: $func;
 }
 
-@mixin section($pt, $pb, $bc) {
+@mixin section($pt: 94px, $pb: 94px) {
     padding-top: $pt;
     padding-bottom: $pb;
 }
+
 @mixin list($d, $g, $fd, $fw) {
     display: $d;
     gap: $g;
@@ -15,8 +16,8 @@
     flex-wrap: $fw;
 }
 
-@mixin item($q, $g, $q-item) {
-    flex-basis: calc((100% - #{$q}*#{$g}) / #{$q-item});
+@mixin item($q: 4, $g: 30px) {
+    flex-basis: calc((100% - (#{$q} - 1) * #{$g}) / #{$q});
 }
 
 @mixin font($ff, $fs, $fw, $lh, $ls, $fc) {

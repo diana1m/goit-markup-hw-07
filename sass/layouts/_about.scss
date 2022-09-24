@@ -1,9 +1,10 @@
 .about {
-    margin-bottom: 94px;
+    @include section (null, 94px);
 }
 
 .about__item {
     position: relative;
+    @include item(3);
 }
 
 .about__label-box {

@@ -1,4 +1,5 @@
 .team {
+    @include section(94px, 94px);
     background-color: var(--secondary-bg-color);
 }
 
