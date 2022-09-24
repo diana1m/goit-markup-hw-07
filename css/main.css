@@ -145,12 +145,12 @@ summary {
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
   /* Text colors */
-  --primery-text-color: #757575;
+  --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-text-color: #2196F3;
   --light-text-color: #FFFFFF;
   --black-text-color: #000000;
-  --contacs-text-color: rgba(255, 255, 255, 0.6);
+  --contacts-text-color: rgba(255, 255, 255, 0.6);
   --icons-color: #AFB1B8;
   /* Background colors */
   --bg-color: #2F303A;
@@ -196,7 +196,7 @@ address {
 body {
   font-family: var(--main-font);
   font-size: 14px;
-  color: var(--primery-text-color);
+  color: var(--primary-text-color);
   background-color: var(--light-bg-color);
 }
 
@@ -674,9 +674,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .features__item {
@@ -795,10 +792,15 @@ body {
   padding-bottom: 94px;
 }
 
-/* .clients-list {} */
+.clients-list {
+  @in;
+}
+
 .clients-item {
   width: 170px;
   height: 92px;
+  -ms-flex-preferred-size: calc((100% - (6 - 1) * 30px) / 6);
+      flex-basis: calc((100% - (6 - 1) * 30px) / 6);
 }
 
 .clients-link {
@@ -875,14 +877,14 @@ body {
   letter-spacing: 0.03em;
 }
 
-.address__contacs {
-  color: var(--contacs-text-color);
+.address__contacts {
+  color: var(--contacts-text-color);
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   -webkit-transition: color var(--anim-main);
   transition: color var(--anim-main);
 }
-.address__contacs:hover, .address__contacs:focus {
+.address__contacts:hover, .address__contacts:focus {
   color: var(--accent-text-color);
 }
 
@@ -993,7 +995,7 @@ body {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfilio-thumb {
+.portfolio-thumb {
   position: relative;
   overflow: hidden;
 }

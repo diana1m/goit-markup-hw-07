@@ -2,11 +2,14 @@
     @include section (94px, 94px);
 } 
 
-/* .clients-list {} */
+.clients-list {
+    @include list();
+}
 
 .clients-item {
     width: 170px;
     height: 92px;
+    @include item(6);
 }
 
 .clients-link {

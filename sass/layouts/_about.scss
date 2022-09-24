@@ -2,6 +2,10 @@
     @include section (null, 94px);
 }
 
+.about__list{
+    @include list();
+}
+
 .about__item {
     position: relative;
     @include item(3);

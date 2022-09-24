@@ -3,7 +3,9 @@
     background-color: var(--secondary-bg-color);
 }
 
-/* .team-list {} */
+.team-list {
+    @include list();
+} 
 
 .team-item {
     background-color: var(--light-bg-color);
