@@ -1,0 +1,41 @@
+.features {
+    padding-top: 94px;
+}
+
+.features__list,
+.about__list,
+.team-list,
+.clients-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.features__item {
+    flex-basis: calc((100% - 30px *3) / 4);
+}
+
+.features__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: var(--secondary-bg-color);
+    margin-bottom: 30px;
+}
+
+.features__suptitle {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+
+    color: var(--title-text-color);
+}
+
+.features__text {
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+}
